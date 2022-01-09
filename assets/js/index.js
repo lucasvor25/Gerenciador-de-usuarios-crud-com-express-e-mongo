@@ -12,7 +12,7 @@ $("#update_user").submit(function(event) {
      data[n['name']] = n['value']
  })
  var request = {
-     "url":`http://localhost:3000/api/user/${data.id}`,
+     "url":`http://localhost:3000/api/users/${data.id}`,
      "method":"PUT",
      "data": data
  }
@@ -34,7 +34,7 @@ if(window.location.pathname == "/") {
         if(confirm("Voce deseja realmente apagar esse usuario?")){
             $.ajax(request).done(function(response) {
                 alert("Usuario apagado com sucesso")
-                location.reload
+                location.reload()
             })
         }
         

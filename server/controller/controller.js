@@ -13,7 +13,7 @@ const user = new Userdb({
     status:req.body.status
 })
 user.save(user).then(data => {
-    res.send(data)
+    res.redirect('/add-user')
 }).catch(erro => {
 res.status(500).send({
     message: erro.message})
