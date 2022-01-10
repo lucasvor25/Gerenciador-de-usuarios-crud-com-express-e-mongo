@@ -37,7 +37,7 @@ a {
     justify-content: space-between;
 }
 
-.text-center{
+.text-center, .email{
     text-align: center;
 }
 

@@ -13,7 +13,7 @@ const port = process.env.port|| 8080
 //log request
 app.use(morgan('tiny'))
 
-//mongo connection
+//Conecçao com o mongoDb
 connectDB()
 
 //parse request to body-parser
@@ -23,7 +23,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.set("view engine", "ejs")
 //app.set("views",path.resolve(__dirname,"views/ejs"))
 
-//load assets
+//carregar arquivos css e js da pasta assets
 app.use('/css', express.static(path.resolve(__dirname, "assets/css")))
 app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
 app.use('/js', express.static(path.resolve(__dirname, "assets/js")))

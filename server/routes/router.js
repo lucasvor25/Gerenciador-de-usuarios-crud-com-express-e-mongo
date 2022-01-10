@@ -4,20 +4,17 @@ const services = require('../services/render')
 const controller = require('../controller/controller')
 
 /**
- * @description Root Route
- * @method GET
+ * @description Rota raiz
  */
 route.get('/', services.homeRoutes)
 
 /**
- * @description add users
- * @method GET/ add-user
+ * @description Adicionar usuario
  */
 route.get('/add-user', services.add_user)
 
 /**
- * @description for update user
- * @method GET/ update-user
+ * @description Atualizar usuario
  */
 route.get('/update-user', services.update_user)
 
