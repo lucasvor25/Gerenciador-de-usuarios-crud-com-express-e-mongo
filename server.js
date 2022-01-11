@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json())
 
 dotenv.config({path: 'config.env'})
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 
 //log request
 app.use(morgan('tiny'))
