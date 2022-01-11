@@ -4,13 +4,8 @@ const morgan = require('morgan')
 const bodyparser = require ('body-parser')
 const path = require('path')
 const connectDB = require('./server/database/connection')
-const cors = require('cors')
 
 const app = express()
-
-app.use(cors())
-
-app.use(express.json())
 
 dotenv.config({path: 'config.env'})
 const port = process.env.PORT || 8080
