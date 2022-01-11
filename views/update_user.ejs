@@ -31,11 +31,11 @@
         <div class="form-group">
             <label for="gender" class="text-light">Sexo</label>
             <div class="radio inline">
-                <input type="radio" id="radio-2" name="gender" value="Male" <%= user.gender == 'Male' ? 'checked' : '' %>>
+                <input type="radio" id="radio-2" name="gender" value="Masculino" <%= user.gender == 'Masculino' ? 'checked' : '' %>>
                 <label for="radio-2" class="radio-label">Masculino</label>
             </div>
             <div class="radio inline">
-                <input type="radio" id="radio-3" name="gender" value="Female"  <%= user.gender == 'Female' ? 'checked' : '' %> >
+                <input type="radio" id="radio-3" name="gender" value="Feminino"  <%= user.gender == 'Feminino' ? 'checked' : '' %> >
                 <label for="radio-3" class="radio-label">Feminino</label>
             </div>
         </div>
@@ -43,11 +43,11 @@
         <div class="form-group">
             <label for="gender" class="text-light">Status</label>
             <div class="radio inline">
-                <input type="radio" id="radio-4" name="status" value="Active" <%= user.status == 'Active' ? 'checked' : '' %> >
+                <input type="radio" id="radio-4" name="status" value="Ativo" <%= user.status == 'Ativo' ? 'checked' : '' %> >
                 <label for="radio-4" class="radio-label">Ativo</label>
             </div>
             <div class="radio inline">
-                <input type="radio" id="radio-5" name="status" value="Inactive" <%= user.status == 'Inactive' ? 'checked' : '' %> >
+                <input type="radio" id="radio-5" name="status" value="Inativo" <%= user.status == 'Inativo' ? 'checked' : '' %> >
                 <label for="radio-5" class="radio-label">Inativo</label>
             </div>
         </div>
